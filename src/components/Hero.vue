@@ -12,6 +12,58 @@
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
+  max-height: 704px;
+
+  &-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 134px;
+    right: 73px;
+    width: 630px;
+    height: 444px;
+    padding-top: 48px;
+    padding-bottom: 46px;
+    padding-left: 56px;
+    padding-right: 61px;
+    background-color: #fff;
+
+    h3 {
+      max-width: 513px;
+      margin: 0;
+      margin-bottom: 20px;
+      font-family: 'Clash Display', sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #22202E;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 157px;
+      font-family: inherit;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #5B5676;
+    }
+
+    a {
+      display: block;
+      width: 157px;
+      height: 56px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-family: inherit;
+      text-align: center;
+      line-height: 1.5;
+      color: #2A254B;
+      background-color: #F9F9F9;
+      box-sizing: border-box;
+    }
+  }
+
   &-img {
     max-width: 100%;
   }
