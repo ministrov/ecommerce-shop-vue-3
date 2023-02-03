@@ -1,5 +1,6 @@
 <template>
   <section class="products">
+    <h2 class="visually-hidden">Cards of the product</h2>
     <div class="products__elements">
       <Product
         v-for="product in products"
