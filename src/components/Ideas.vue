@@ -5,13 +5,21 @@
       <p class="ideas__text-slogan">It started with a small idea</p>
       <p class="ideas__text-descr">A global brand with local beginnings, our story begain in a small studio in South London in early 2014
       </p>
-      <a class="ideas__link" href="#">View collection</a>
+
+      <Button background="rgba(249, 249, 249, 0.15)">
+        View collection
+      </Button>
+      <!-- <a class="ideas__link" href="#">View collection</a> -->
     </div>
     <div class="ideas__img">
       <img src="/img/small-room.jpg" width="630" height="478" alt="A view of the small room">
     </div>
   </section>
 </template>
+
+<script setup>
+import Button from '@/components/UI/Button.vue'
+</script>
 
 <style lang="scss" scoped>
 .ideas {
@@ -45,7 +53,7 @@
       max-width: 495px;
       margin: 0;
       margin-bottom: 205px;
-      font-family: 'Satoshi';
+      font-family: var(--satoshi);
       font-style: normal;
       font-weight: 400;
       font-size: 18px;

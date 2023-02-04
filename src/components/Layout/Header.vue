@@ -4,18 +4,18 @@
       <div class="header-top-search">
         <img src="/svg/header-search.svg" width="16" height="16" alt="Search icon">
       </div>
-      <a href="#" class="header-logo">Avion</a>
+      <router-link to="/" class="header-logo">Avion</router-link>
       <div class="header-top-right">
         <div class="header-top-right__cart">
-          <a href="#" >
+          <router-link to="/cart" >
             <img src="/svg/header-cart.svg" width="16" height="16" alt="Cart icon">
-          </a>
+          </router-link>
         </div>
 
         <div class="header-top-right__user">
-          <a href="#">
+          <router-link to="/user">
             <img src="/svg/header-user.svg" width="16" height="16" alt="User icon">
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -27,11 +27,11 @@
             :key="index"
             class="main-nav-item"
           >
-            <a
-              :href="item.path"
+            <router-link
+              :to="item.path"
               class="main-nav__link">
               {{ item.name }}
-            </a>
+            </router-link>
           </li>
         </ul>
       </nav>
@@ -68,7 +68,7 @@ const menu = [
   }
 
   &-logo {
-    font-family: 'Clash Display', sans-serif;
+    font-family: var(--clash);
     font-size: 24px;
     font-weight: 400;
     line-height: 1.2;

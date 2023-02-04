@@ -1,11 +1,11 @@
 <template>
-  <a class="product" href="#">
+  <router-link to="/" class="product">
     <article class="product__elem">
       <img class="product__img" :src="img" :alt="title">
-      <h2 class="product__title">{{ title }}</h2>
+      <router-link to="/" class="product__title">{{ title }}</router-link>
       <span class="product__span">£{{ price }}</span>
     </article>
-  </a>
+  </router-link>
 </template>
 
 <script setup>
@@ -45,11 +45,12 @@ const props = defineProps({
   &__title {
     margin: 0;
     margin-bottom: 8px;
-    font-family: 'Clash Display';
+    font-family: var(--clash);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
+    text-decoration: none;
     color: #2A254B;
 
     &:hover {
@@ -58,7 +59,7 @@ const props = defineProps({
   }
 
   &__span {
-    font-family: 'Satoshi';
+    font-family: var(--satoshi);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

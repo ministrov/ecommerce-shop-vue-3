@@ -5,10 +5,18 @@
     <div class="hero-info">
       <h3>Luxury homeware for people who love timeless design quality</h3>
       <p>Shop the new Spring 2022 collection today</p>
-      <a>View collection</a>
+
+      <Button background="#F9F9F9">
+        View collection
+      </Button>
+      <!-- <a>View collection</a> -->
     </div>
   </section>
 </template>
+
+<script setup>
+import Button from '@/components/UI/Button.vue'
+</script>
 
 <style lang="scss" scoped>
 .hero {
@@ -33,7 +41,7 @@
       max-width: 513px;
       margin: 0;
       margin-bottom: 20px;
-      font-family: 'Clash Display', sans-serif;
+      font-family: var(--clash);
       font-size: 32px;
       font-weight: 400;
       line-height: 1.4;
