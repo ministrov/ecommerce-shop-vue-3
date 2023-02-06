@@ -7,6 +7,7 @@
         'btn--primary': color === 'primary',
         'btn--secondary': color === 'secondary',
         'btn--lightgray': color === 'lightgray',
+        'btn--white': color === 'white',
       },
     ]"
     class="btn"
@@ -79,6 +80,11 @@ const props = defineProps({
   &--lightgray {
     color: #2a254b;
     background-color: #f9f9f9;
+  }
+
+  &--white {
+    color: #2a254b;
+    background-color: #FFFFFF;
   }
 
   &:hover {

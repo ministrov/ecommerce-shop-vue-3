@@ -24,7 +24,7 @@
       <form class="subscription__subscribe-form subscribe-form">
         <input type="text" class="subscribe-form__input input-text" placeholder="your@email.com">
         <Button>
-          Sign Up
+          Sign up
         </Button>
       </form>
     </div>
