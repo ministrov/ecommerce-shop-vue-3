@@ -6,7 +6,11 @@
       <p class="ideas__text-descr">A global brand with local beginnings, our story begain in a small studio in South London in early 2014
       </p>
 
-      <Button background="rgba(249, 249, 249, 0.15)">
+      <Button
+        color="secondary"
+        type="Link"
+        to="/"
+      >
         View collection
       </Button>
       <!-- <a class="ideas__link" href="#">View collection</a> -->
@@ -19,6 +23,7 @@
 
 <script setup>
 import Button from '@/components/UI/Button.vue'
+
 </script>
 
 <style lang="scss" scoped>
@@ -60,24 +65,6 @@ import Button from '@/components/UI/Button.vue'
       line-height: 24px;
       color: #FFFFFF;
     }
-  }
-
-  &__link {
-    display: block;
-    width: 157px;
-    height: 56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    background: rgba(249, 249, 249, 0.15);
-    box-sizing: border-box;
   }
 
   &__img {

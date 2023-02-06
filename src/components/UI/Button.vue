@@ -1,15 +1,53 @@
 <template>
-  <button :style="{ backgroundColor: background }" class="btn">
-    <slot/>
+  <button
+    v-if="type === 'button'"
+    :class="[
+      'btn',
+      {
+        'btn--primary': color === 'primary',
+        'btn--secondary': color === 'secondary',
+        'btn--lightgray': color === 'lightgray',
+      },
+    ]"
+    class="btn"
+  >
+    <slot />
   </button>
+
+  <router-link
+    v-else
+    :class="[
+      'btn',
+      {
+        'btn--primary': color === 'primary',
+        'btn--secondary': color === 'secondary',
+        'btn--lightgray': color === 'lightgray',
+      },
+    ]"
+    :to="to"
+  >
+    <slot />
+  </router-link>
 </template>
 
 <script setup>
 const props = defineProps({
   background: {
     type: String,
-    required: false
-  }
+    required: false,
+  },
+  type: {
+    type: String,
+    default: "button",
+  },
+  to: {
+    type: String,
+    required: false,
+  },
+  color: {
+    type: String,
+    default: "primary",
+  },
 });
 </script>
 
@@ -17,32 +55,34 @@ const props = defineProps({
 .btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  max-width: 170px;
   height: 56px;
-  padding: 0 32px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-size: 16px;
-  color: #fff;
-  background-color: rgba(249, 249, 249, 0.15);
+  text-decoration: none;
   cursor: pointer;
   border: none;
-  // width: 157px;
-  // height: 56px;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
-  // font-family: inherit;
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 1.5;
-  // text-align: center;
-  // text-decoration: none;
-  // color: #FFFFFF;
-  // background-color: rgba(249, 249, 249, 0.15);
-  // box-sizing: border-box;
+
+
+  &--primary {
+    color: #FFFFFF;
+    background-color: #2a254b;
+  }
+
+  &--secondary {
+    color: #FFFFFF;
+    background: rgba(249, 249, 249, 0.15);
+  }
+
+  &--lightgray {
+    color: #2a254b;
+    background-color: #f9f9f9;
+  }
 
   &:hover {
     opacity: 0.8;
   }
-
 }
 </style>

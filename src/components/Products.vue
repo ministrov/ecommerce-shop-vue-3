@@ -10,13 +10,20 @@
         :price="product.price"
       />
     </div>
-    <a class="products__btn">View collection</a>
+    <Button
+      color="lightgray"
+      type="Link"
+      to="to"
+    >
+      View collection
+    </Button>
   </section>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import Product from '@/components/Product.vue';
+import Button from '@/components/UI/Button.vue';
 
 const products = ref([
   {
@@ -55,19 +62,9 @@ const products = ref([
     margin-bottom: 48px;
   }
 
-  &__btn {
-    display: block;
-    width: 157px;
-    height: 56px;
+  & > a {
+    max-width: 182px;
     margin: 0 auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-family: inherit;
-    text-align: center;
-    line-height: 1.5;
-    color: #2A254B;
-    background-color: #F9F9F9;
-    box-sizing: border-box;
   }
 }
 </style>

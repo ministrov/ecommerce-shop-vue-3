@@ -6,10 +6,14 @@
       <h3>Luxury homeware for people who love timeless design quality</h3>
       <p>Shop the new Spring 2022 collection today</p>
 
-      <Button background="#F9F9F9">
+      <Button
+        color="lightgray"
+        type="Link"
+        to="/"
+        class="hero__btn"
+      >
         View collection
       </Button>
-      <!-- <a>View collection</a> -->
     </div>
   </section>
 </template>
@@ -55,20 +59,6 @@ import Button from '@/components/UI/Button.vue'
       font-size: 18px;
       line-height: 1.5;
       color: #5B5676;
-    }
-
-    a {
-      display: block;
-      width: 157px;
-      height: 56px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      font-family: inherit;
-      text-align: center;
-      line-height: 1.5;
-      color: #2A254B;
-      background-color: #F9F9F9;
-      box-sizing: border-box;
     }
   }
 
