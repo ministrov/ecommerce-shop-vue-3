@@ -71,15 +71,11 @@
         <div class="footer-subscribe">
           <h2 class="footer-subscribe__title">Join our mailing list</h2>
 
-          <form class="footer-subscribe__form">
-            <input type="text" class="subscribe-form__input input-text" placeholder="your@email.com">
-            <Button
-              type="button"
-              color="white"
-            >
-              Sign up
-            </Button>
-          </form>
+          <SubscribeForm
+            colorButton="white"
+            bgInput="rgba(255, 255, 255, 0.15)"
+            colorText="#FFFFFF"
+          />
         </div>
       </div>
 
@@ -135,7 +131,7 @@
 </template>
 
 <script setup>
-import Button from '@/components/UI/Button.vue';
+import SubscribeForm from '@/components/SubscribeForm.vue'
 </script>
 
 <style lang="scss" scoped>
@@ -242,14 +238,5 @@ import Button from '@/components/UI/Button.vue';
     line-height: 20px;
     color: #FFFFFF;
   }
-
-  &__form {
-    display: flex;
-  }
-}
-
-.subscribe-form__input {
-  flex-grow: 1;
-  background: rgba(255, 255, 255, 0.15);
 }
 </style>

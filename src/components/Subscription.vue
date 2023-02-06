@@ -21,18 +21,14 @@
         </ul>
       </div>
 
-      <form class="subscription__subscribe-form subscribe-form">
-        <input type="text" class="subscribe-form__input input-text" placeholder="your@email.com">
-        <Button>
-          Sign up
-        </Button>
-      </form>
+      <SubscribeForm/>
     </div>
   </section>
 </template>
 
 <script setup>
 import Button from '@/components/UI/Button.vue';
+import SubscribeForm from '@/components/SubscribeForm.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -103,13 +99,5 @@ import Button from '@/components/UI/Button.vue';
     line-height: 1.5;
     color: #FFFFFF;
   }
-
-  &__subscribe-form {
-    display: flex;
-  }
-}
-
-.subscribe-form__input {
-  flex-grow: 1;
 }
 </style>
