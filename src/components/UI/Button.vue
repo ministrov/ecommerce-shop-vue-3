@@ -68,23 +68,23 @@ const props = defineProps({
 
 
   &--primary {
-    color: #FFFFFF;
-    background-color: #2a254b;
+    color: var(--white-main);
+    background-color: var(--dark-primary);
   }
 
   &--secondary {
-    color: #FFFFFF;
+    color: var(--white-main);
     background: rgba(249, 249, 249, 0.15);
   }
 
   &--lightgray {
-    color: #2a254b;
-    background-color: #f9f9f9;
+    color: var(--dark-primary);
+    background-color: var(--lightgray);
   }
 
   &--white {
-    color: #2a254b;
-    background-color: #FFFFFF;
+    color: var(--dark-primary);
+    background-color: var(--white-main);
   }
 
   &:hover {

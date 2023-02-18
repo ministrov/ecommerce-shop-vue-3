@@ -19,7 +19,9 @@
 </template>
 
 <script setup>
+
 import Button from '@/components/UI/Button.vue'
+
 </script>
 
 <style lang="scss" scoped>

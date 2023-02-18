@@ -39,7 +39,7 @@ import Button from '@/components/UI/Button.vue'
     padding-bottom: 60px;
     padding-left: 64px;
     padding-right: 75px;
-    background-color: #2A254B;
+    background-color: var(--dark-primary);
     box-sizing: border-box;
 
     &-slogan {
@@ -51,7 +51,7 @@ import Button from '@/components/UI/Button.vue'
       font-weight: 400;
       font-size: 32px;
       line-height: 39px;
-      color: #FFFFFF;
+      color: var(--white-main);
     }
 
     &-descr {
@@ -63,7 +63,7 @@ import Button from '@/components/UI/Button.vue'
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
-      color: #FFFFFF;
+      color: var(--white-main);
     }
   }
 

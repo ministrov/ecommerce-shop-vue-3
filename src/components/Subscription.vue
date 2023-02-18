@@ -55,7 +55,7 @@ import SubscribeForm from '@/components/SubscribeForm.vue';
     font-weight: 400;
     font-size: 32px;
     line-height: 1.4;
-    color: #FFFFFF;
+    color: var(--white-main);
   }
 
   &__text {
@@ -68,7 +68,7 @@ import SubscribeForm from '@/components/SubscribeForm.vue';
     font-size: 18px;
     text-align: center;
     line-height: 1.5;
-    color: #FFFFFF;
+    color: var(--white-main);
   }
 
   &__checks {
@@ -97,7 +97,7 @@ import SubscribeForm from '@/components/SubscribeForm.vue';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #FFFFFF;
+    color: var(--white-main);
   }
 }
 </style>
