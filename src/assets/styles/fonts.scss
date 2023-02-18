@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 300;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Satoshi"),
+  /* Если не получилось, загрузит woff2 */
+  url("/fonts/Satoshi-Light.woff2") format("woff2"),
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  url("/fonts/Satoshi-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Satoshi"),
+  /* Если не получилось, загрузит woff2 */
+  url("/fonts/Satoshi-Regular.woff2") format("woff2"),
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  url("/fonts/Satoshi-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Satoshi"),
+  /* Если не получилось, загрузит woff2 */
+  url("/fonts/Satoshi-Medium.woff2") format("woff2"),
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  url("/fonts/Satoshi-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Satoshi"),
+  /* Если не получилось, загрузит woff2 */
+  url("/fonts/Satoshi-Bold.woff2") format("woff2"),
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  url("/fonts/Satoshi-Bold.woff") format("woff");
+}
