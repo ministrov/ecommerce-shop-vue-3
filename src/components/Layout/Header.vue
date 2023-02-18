@@ -105,6 +105,10 @@ const menu = [
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media screen and (max-width: 1024px) {
+    gap: 20px;
+  }
 }
 
 .main-nav__link {

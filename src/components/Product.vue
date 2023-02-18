@@ -51,7 +51,7 @@ const props = defineProps({
     font-size: 20px;
     line-height: 1.4;
     text-decoration: none;
-    color: #2A254B;
+    color: var(--dark-primary);
 
     &:hover {
       text-decoration: underline;
@@ -64,7 +64,7 @@ const props = defineProps({
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    color: #2A254B;
+    color: var(--dark-primary);
   }
 }
 </style>

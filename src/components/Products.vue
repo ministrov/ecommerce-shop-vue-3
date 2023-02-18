@@ -60,6 +60,11 @@ const products = ref([
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     margin-bottom: 48px;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+    }
   }
 
   & > a {

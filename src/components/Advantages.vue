@@ -56,17 +56,27 @@ const advantages = [
     font-size: 24px;
     line-height: 1.5;
     text-align: center;
-    color: #2A254B;
+    color: var(--dark-primary);
   }
 
   &__elements {
     display: flex;
     gap: 22px;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 1150px) {
+      gap: 15px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
   }
 
   &__element {
     padding: 48px;
-    background-color: #F9F9F9;
+    background-color: var(--lightgray);
 
     img {
       display: block;
@@ -80,7 +90,7 @@ const advantages = [
       font-weight: 400;
       font-size: 20px;
       line-height: 1.4;
-      color: #2A254B;
+      color: var(--dark-primary);
     }
 
     p {
@@ -88,7 +98,7 @@ const advantages = [
       padding-right: 22px;
       font-family: inherit;
       font-size: inherit;
-      color: #2A254B;
+      color: var(--dark-primary);
     }
   }
 }

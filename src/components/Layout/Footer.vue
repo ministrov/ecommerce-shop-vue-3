@@ -136,8 +136,8 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
 
 <style lang="scss" scoped>
 .footer {
-  color: #FFFFFF;
-  background-color: #2A254B;
+  color: var(--white-main);
+  background-color: var(--dark-primary);
 
   &-content {
     padding-top: 58px;
@@ -167,7 +167,12 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
     grid-template-columns: 540px 1fr;
     column-gap: 109px;
     padding-bottom: 45px;
-    border-bottom: 1px solid #4E4D93;
+    border-bottom: 1px solid var(--primary);
+
+    @media screen and (max-width: 1150px) {
+      grid-template-columns: 1fr;
+      row-gap: 45px;
+    }
   }
 
   &-menu {
@@ -192,7 +197,7 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
       font-size: 14px;
       line-height: 19px;
       text-decoration: none;
-      color: #FFFFFF;
+      color: var(--white-main);
 
       &:hover {
         text-decoration: underline;
@@ -213,7 +218,7 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
       font-weight: 400;
       font-size: 14px;
       line-height: 19px;
-      color: #FFFFFF;
+      color: var(--white-main);
     }
 
     &__socials {
@@ -236,7 +241,7 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: var(--white-main);
   }
 }
 </style>
